@@ -3,6 +3,31 @@
     "feed_url": "https://news.google.com/rss/search?q=Strait+of+Hormuz&scoring=n",
     "articles": [
       {
+        "title": "Strait of Hormuz Risks?: The risks USS Abraham Lincoln may face while passing through the narrowest oil chokepoint - WION",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNNlRqdDhtS3VaZGpJYVFIQmJTU0RGMWhXUUZrU3BpOG1OYjZUR1JLalJJTF83ejBfaWFTVTNDc28xNWtwcEZjUDFQelQ4OXZvakw4dTBBcGN1dlFKdUFuVXpnVGZoT25XVERENVJ0Zm5EQjFmb01kU3hEV0JfbWI0VUxGNE5jNUl2dmFwVVFxX2wzQ2p3SkZCVkZOcGRBZDhTOUtvMUs3MHc0REFVeF9taWJDRXB5bHBkVEhsdktQYnVkR2NrMm5ydFk4YmFGaDhSMGZ0YjRRZmlJNmtoMWdVMWZlOHh4UjZzNFpCc1N3?oc=5",
+        "source": "WION",
+        "pubdate": "2026-02-20T18:50:00+00:00",
+        "chokepoint": "Strait of Hormuz",
+        "categories": [
+          "Chokepoint",
+          "Energy Markets"
+        ],
+        "signal_strength": 1
+      },
+      {
+        "title": "\ud83c\uddee\ud83c\uddf7\ud83c\uddfa\ud83c\uddf8 A strike on Iran could send oil markets into shock. If the Strait of Hormuz is disrupted, crude may climb beyond $90 a barrel, driving U.S. gas over $3. Major attacks on Gulf energy facilities could send prices soaring to $130. Source: Axios - x.com",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE02T2xMY3EtaFBKWmE0c2hUa2tZV2tJN0poejZxSUtmVW9FcFVBcDltSUlKY0oxMHRya1BzRHhIYWN6MmVKaElCWFJkVDEybEprQk53WDBucmI0ZXgyY2tZUzJR?oc=5",
+        "source": "x.com",
+        "pubdate": "2026-02-20T11:30:00+00:00",
+        "chokepoint": "Strait of Hormuz",
+        "categories": [
+          "Chokepoint",
+          "Energy Markets",
+          "Geopolitics / Security"
+        ],
+        "signal_strength": 3
+      },
+      {
         "title": "Why US-Iran Tensions Raise Concern Over the Strait of Hormuz - Bloomberg",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaEQ2M0dPRjFTV3lHbVBwUlY3b2sxa2ZJME5fUmhhbUE1Sl9kVy1LeEJXdXJzUVdCWDVjYnExMTgya1dDZXpHMXNpWGphN0lLUzJmSFJCOVFWTk5adHBpaWEyY0o1Nk1zeVhnZ1hBbGx3UFl0dUxVZlBfa1Z2bklrOVJFTXp6eHVwWFItZlJDTzRkUV9WS3o1MnIwQ1FTTDUtZTVpbDFQYUcyV2lOWTJuRmduLVg?oc=5",
         "source": "Bloomberg",
@@ -38,18 +63,6 @@
         "signal_strength": 1
       },
       {
-        "title": "Strait of Hormuz Risks?: The risks USS Abraham Lincoln may face while passing through the narrowest oil chokepoint - WION",
-        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNNlRqdDhtS3VaZGpJYVFIQmJTU0RGMWhXUUZrU3BpOG1OYjZUR1JLalJJTF83ejBfaWFTVTNDc28xNWtwcEZjUDFQelQ4OXZvakw4dTBBcGN1dlFKdUFuVXpnVGZoT25XVERENVJ0Zm5EQjFmb01kU3hEV0JfbWI0VUxGNE5jNUl2dmFwVVFxX2wzQ2p3SkZCVkZOcGRBZDhTOUtvMUs3MHc0REFVeF9taWJDRXB5bHBkVEhsdktQYnVkR2NrMm5ydFk4YmFGaDhSMGZ0YjRRZmlJNmtoMWdVMWZlOHh4UjZzNFpCc1N3?oc=5",
-        "source": "WION",
-        "pubdate": "2026-02-20T18:50:00+00:00",
-        "chokepoint": "Strait of Hormuz",
-        "categories": [
-          "Chokepoint",
-          "Energy Markets"
-        ],
-        "signal_strength": 1
-      },
-      {
         "title": "Oil Prices Pause After A Week Of Iran-Related Jitters - Finimize",
         "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZEFSSmxYeUxSVmZkYjVZYjJfS0tWOUE3MGxkM01NclJYb0Q4cW5CZFhuRDRvOF81RG9oTFY0MGV3SW55aXNMeTNITFBBWmlweWpBT3NVeW9HQ1VaWEc1dTk0NHpPSEp6OFJmOG1XcXJpMWFoMzVjTXFDbFBRV1NsSkNYRi1HZU1Kb1E?oc=5",
         "source": "Finimize",
@@ -59,19 +72,6 @@
           "Energy Markets"
         ],
         "signal_strength": 1
-      },
-      {
-        "title": "\ud83c\uddee\ud83c\uddf7\ud83c\uddfa\ud83c\uddf8 A strike on Iran could send oil markets into shock. If the Strait of Hormuz is disrupted, crude may climb beyond $90 a barrel, driving U.S. gas over $3. Major attacks on Gulf energy facilities could send prices soaring to $130. Source: Axios - x.com",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE02T2xMY3EtaFBKWmE0c2hUa2tZV2tJN0poejZxSUtmVW9FcFVBcDltSUlKY0oxMHRya1BzRHhIYWN6MmVKaElCWFJkVDEybEprQk53WDBucmI0ZXgyY2tZUzJR?oc=5",
-        "source": "x.com",
-        "pubdate": "2026-02-20T11:30:00+00:00",
-        "chokepoint": "Strait of Hormuz",
-        "categories": [
-          "Chokepoint",
-          "Energy Markets",
-          "Geopolitics / Security"
-        ],
-        "signal_strength": 3
       }
     ],
     "why_it_matters": "Activity around Strait of Hormuz is elevated enough to generate multiple relevant signals in the last 24 hours. One high-severity development was detected, including closures, live-fire activity, or direct threats. Coverage is explicitly linking developments to oil and LNG flows, underscoring potential market impact. Maritime implications are present, including vessel risk, routing considerations, or freight exposure. Geopolitics and security dynamics are present, raising the potential for localized tension."
