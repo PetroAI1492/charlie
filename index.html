@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Chokepoints – 24h Signal Dashboard</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background-color: #f4f4f6;
+      color: #111827;
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+    .page-header {
+      margin-bottom: 16px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 12px;
+    }
+    .page-title {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #111827;
+    }
+    .page-subtitle {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+    .page-meta {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+    .chokepoint-section {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 16px 18px 18px;
+      margin-top: 18px;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    }
+    .chokepoint-header {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-bottom: 10px;
+    }
+    .chokepoint-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #111827;
+    }
+    .chokepoint-subtitle {
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+    .why-block {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+    .why-label {
+      font-weight: 600;
+      margin-right: 4px;
+    }
+    .why-text {
+      font-weight: 400;
+    }
+    .feed-meta {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      margin-bottom: 8px;
+    }
+    .signal-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .signal-table thead {
+      background-color: #111827;
+      color: #f9fafb;
+    }
+    .signal-table th,
+    .signal-table td {
+      padding: 6px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .signal-table th {
+      font-weight: 600;
+      border-bottom: 1px solid #374151;
+    }
+    .signal-table tbody tr:nth-child(odd) {
+      background-color: #f9fafb;
+    }
+    .signal-table tbody tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+    .cell-headline a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+    .cell-headline a:hover {
+      text-decoration: underline;
+    }
+    .cell-empty {
+      text-align: center;
+      color: #9ca3af;
+      font-style: italic;
+    }
+    .cell-time {
+      white-space: nowrap;
+      color: #4b5563;
+    }
+    .cell-source {
+      color: #4b5563;
+    }
+    .cell-categories {
+      color: #374151;
+    }
+    .cell-chokepoint {
+      color: #374151;
+    }
+    .cell-signal {
+      font-weight: 600;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .signal-0 { color: #6b7280; font-weight: 400; }
+    .signal-1 { color: #2563eb; }
+    .signal-2 { color: #d97706; }
+    .signal-3 { color: #b91c1c; }
+    @media (max-width: 800px) {
+      .signal-table th:nth-child(3),
+      .signal-table td:nth-child(3),
+      .signal-table th:nth-child(4),
+      .signal-table td:nth-child(4) {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <div class="page-title">Global Chokepoints – 24h Signal Dashboard</div>
+      <div class="page-subtitle">
+        Deterministic filter · Chokepoint, energy, shipping, and security signals
+      </div>
+      <div class="page-meta">
+        Generated at: 2026-02-21T03:06:39.020319+00:00 (UTC)
+      </div>
+    </header>
+
+    
+        <section class="chokepoint-section">
+          <header class="chokepoint-header">
+            <div class="chokepoint-title">Strait of Hormuz</div>
+            <div class="chokepoint-subtitle">24h signal snapshot · deterministic RSS filter</div>
+          </header>
+          <div class="why-block">
+            <span class="why-label">Why this matters:</span>
+            <span class="why-text">Activity around Strait of Hormuz is elevated enough to generate multiple relevant signals in the last 24 hours. One high-severity development was detected, including closures, live-fire activity, or direct threats. Coverage is explicitly linking developments to oil and LNG flows, underscoring potential market impact. Maritime implications are present, including vessel risk, routing considerations, or freight exposure. Geopolitics and security dynamics are present, raising the potential for localized tension.</span>
+          </div>
+          <div class="feed-meta">Source feed: https://news.google.com/rss/search?q=Strait+of+Hormuz&scoring=n</div>
+          <table class="signal-table">
+            <thead>
+              <tr>
+                <th>Published</th>
+                <th>Headline</th>
+                <th>Source</th>
+                <th>Chokepoint</th>
+                <th>Categories</th>
+                <th>Signal</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            <tr>
+              <td class="cell-time">2026-02-20T18:50:00+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxNNlRqdDhtS3VaZGpJYVFIQmJTU0RGMWhXUUZrU3BpOG1OYjZUR1JLalJJTF83ejBfaWFTVTNDc28xNWtwcEZjUDFQelQ4OXZvakw4dTBBcGN1dlFKdUFuVXpnVGZoT25XVERENVJ0Zm5EQjFmb01kU3hEV0JfbWI0VUxGNE5jNUl2dmFwVVFxX2wzQ2p3SkZCVkZOcGRBZDhTOUtvMUs3MHc0REFVeF9taWJDRXB5bHBkVEhsdktQYnVkR2NrMm5ydFk4YmFGaDhSMGZ0YjRRZmlJNmtoMWdVMWZlOHh4UjZzNFpCc1N3?oc=5" target="_blank" rel="noopener noreferrer">
+                  Strait of Hormuz Risks?: The risks USS Abraham Lincoln may face while passing through the narrowest oil chokepoint - WION
+                </a>
+              </td>
+              <td class="cell-source">WION</td>
+              <td class="cell-chokepoint">Strait of Hormuz</td>
+              <td class="cell-categories">Chokepoint, Energy Markets</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+
+            <tr>
+              <td class="cell-time">2026-02-20T11:30:00+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE02T2xMY3EtaFBKWmE0c2hUa2tZV2tJN0poejZxSUtmVW9FcFVBcDltSUlKY0oxMHRya1BzRHhIYWN6MmVKaElCWFJkVDEybEprQk53WDBucmI0ZXgyY2tZUzJR?oc=5" target="_blank" rel="noopener noreferrer">
+                  🇮🇷🇺🇸 A strike on Iran could send oil markets into shock. If the Strait of Hormuz is disrupted, crude may climb beyond $90 a barrel, driving U.S. gas over $3. Major attacks on Gulf energy facilities could send prices soaring to $130. Source: Axios - x.com
+                </a>
+              </td>
+              <td class="cell-source">x.com</td>
+              <td class="cell-chokepoint">Strait of Hormuz</td>
+              <td class="cell-categories">Chokepoint, Energy Markets, Geopolitics / Security</td>
+              <td class="cell-signal signal-3">3</td>
+            </tr>
+            
+
+            <tr>
+              <td class="cell-time">2026-02-21T01:48:33+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPaEQ2M0dPRjFTV3lHbVBwUlY3b2sxa2ZJME5fUmhhbUE1Sl9kVy1LeEJXdXJzUVdCWDVjYnExMTgya1dDZXpHMXNpWGphN0lLUzJmSFJCOVFWTk5adHBpaWEyY0o1Nk1zeVhnZ1hBbGx3UFl0dUxVZlBfa1Z2bklrOVJFTXp6eHVwWFItZlJDTzRkUV9WS3o1MnIwQ1FTTDUtZTVpbDFQYUcyV2lOWTJuRmduLVg?oc=5" target="_blank" rel="noopener noreferrer">
+                  Why US-Iran Tensions Raise Concern Over the Strait of Hormuz - Bloomberg
+                </a>
+              </td>
+              <td class="cell-source">Bloomberg</td>
+              <td class="cell-chokepoint">Strait of Hormuz</td>
+              <td class="cell-categories">Chokepoint, Maritime / Shipping</td>
+              <td class="cell-signal signal-2">2</td>
+            </tr>
+            
+
+            <tr>
+              <td class="cell-time">2026-02-20T09:15:11+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxQUW5JNmhLVGVYdkNiSkVRS3R1ZWpUbmZKRm5wYVVlNzM3Q08zX2ItSWo0eWJ4MjFKWWxCR212Y2xORjVWTTZ0UkR4anpSbVU1SnBzWUhGdVhuZ3NuNmxLMUFVaEdWTFl1ZTlrWGdPUXloaFhIdnl2WVZhVlB4QVJCclVqOC01OENNUlNaeE5Ya3ZuSzdIb1k3SFlZRWM1S2VnZVpiamtMWEluaU5nRnU0ekRMV0ppYjdHczVDWVRlZFJsNWJXdWfSAcYBQVVfeXFMTWkta1BHVGRIR1MwV3hFdXMtZGlRalRmcENycG81SGdZRVdLSnJHc0xEZGxoZERpUmd6MHl3ZXdrN0J5b1k3RFBsUlNSdHpoNXdWeGMwc0tUcTFLUm5UTW1ubFBwUnpVeWJOakppY2duWG9qbDBiV1g2RU9ETTVXMk1Ec0hES0JMWGRPVUdicjA1QU05MHAyS3QxZkNYdmdzS3gyZ216R0NQUG1OQVR1X0pudTYxS24xOEdHU1FhZ3dWMnR1SjVR?oc=5" target="_blank" rel="noopener noreferrer">
+                  What would blocking the Strait of Hormuz mean for global oil and LNG shipments? - South China Morning Post
+                </a>
+              </td>
+              <td class="cell-source">South China Morning Post</td>
+              <td class="cell-chokepoint">Strait of Hormuz</td>
+              <td class="cell-categories">Chokepoint, Energy Markets</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+
+            <tr>
+              <td class="cell-time">2026-02-21T00:44:00+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQNTB0VXl4RHUtQlhBUk9wb1dSc3AwWHpEamtacWhZTVJOQWt5UWVuN3Y2aXhBTnNzeEhRdERuMm1iR2N0ekRmNUlwcDFoU212SEFJQS1QUFkwYjZzc0JOd0RnWnVURnNRZW5GRnd0dWNMeGFjUWtUR2lBS0gzWDJGZE12V2pzODFzN0FZVFcyV0dYWWRsMm5DTk13UGR4c3dDdzdYNnh4b1hET3NtVVE0dUgwSXE3bzhjT0MtSEdVRU0tRUZmTTBZYldB0gHQAUFVX3lxTFB6TWNxN0lkWkRwQkVQMkY5clRIaGZKNXFoYk52S29nSGpkUWY5dVRoUWJTdFNfZVFGY3JjRUVCTFJ5eVE3dzFVeHhLdkExSXNiS2JGUHBpdG0ydnBVWFNxSDlXOTd5TmhVVWNpdk5CT1ZMa0tJekhiRFpEbk1IaE1DVFlpcTdrbzVDdm5pMWpfbVRiOFlzU3dIbWZDbWgxNDZWYjVkTlBESWxYSXR0SmIyaWdoVWFNMUU1eWZhSTBhNlZ5U1ppTWZmVUpfcDFFcG4?oc=5" target="_blank" rel="noopener noreferrer">
+                  Why the Strait of Hormuz remains central to global energy security - The Hindu
+                </a>
+              </td>
+              <td class="cell-source">The Hindu</td>
+              <td class="cell-chokepoint">Strait of Hormuz</td>
+              <td class="cell-categories">Chokepoint</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+
+            <tr>
+              <td class="cell-time">2026-02-20T20:50:09+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQZEFSSmxYeUxSVmZkYjVZYjJfS0tWOUE3MGxkM01NclJYb0Q4cW5CZFhuRDRvOF81RG9oTFY0MGV3SW55aXNMeTNITFBBWmlweWpBT3NVeW9HQ1VaWEc1dTk0NHpPSEp6OFJmOG1XcXJpMWFoMzVjTXFDbFBRV1NsSkNYRi1HZU1Kb1E?oc=5" target="_blank" rel="noopener noreferrer">
+                  Oil Prices Pause After A Week Of Iran-Related Jitters - Finimize
+                </a>
+              </td>
+              <td class="cell-source">Finimize</td>
+              <td class="cell-chokepoint">—</td>
+              <td class="cell-categories">Energy Markets</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+            </tbody>
+          </table>
+        </section>
+        
+
+        <section class="chokepoint-section">
+          <header class="chokepoint-header">
+            <div class="chokepoint-title">Strait of Malacca</div>
+            <div class="chokepoint-subtitle">24h signal snapshot · deterministic RSS filter</div>
+          </header>
+          <div class="why-block">
+            <span class="why-label">Why this matters:</span>
+            <span class="why-text">Activity around Strait of Malacca generated at least one relevant signal in the last 24 hours. Geopolitics and security dynamics are present, raising the potential for localized tension.</span>
+          </div>
+          <div class="feed-meta">Source feed: https://news.google.com/rss/search?q=Strait+of+Malacca&scoring=n</div>
+          <table class="signal-table">
+            <thead>
+              <tr>
+                <th>Published</th>
+                <th>Headline</th>
+                <th>Source</th>
+                <th>Chokepoint</th>
+                <th>Categories</th>
+                <th>Signal</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            <tr>
+              <td class="cell-time">2026-02-20T12:13:00+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9MeHpzMjZlX1EtZ1pCN09oY2ZsRnpFYm9Qc0RfWmZYS3NuOGJsd21GbWpSclJaUEI2MG42aWdHLXdpTzRoMml0Y0tCeDlPSldDYUdSTEdGa2s?oc=5" target="_blank" rel="noopener noreferrer">
+                  Australia urged to prepare Malacca leverage to deter Taiwan Strait war - Taiwan News
+                </a>
+              </td>
+              <td class="cell-source">Taiwan News</td>
+              <td class="cell-chokepoint">Strait of Malacca</td>
+              <td class="cell-categories">Chokepoint, Geopolitics / Security</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+            </tbody>
+          </table>
+        </section>
+        
+
+        <section class="chokepoint-section">
+          <header class="chokepoint-header">
+            <div class="chokepoint-title">Suez Canal</div>
+            <div class="chokepoint-subtitle">24h signal snapshot · deterministic RSS filter</div>
+          </header>
+          <div class="why-block">
+            <span class="why-label">Why this matters:</span>
+            <span class="why-text">Activity around Suez Canal generated at least one relevant signal in the last 24 hours. Coverage links developments to oil or LNG flows, highlighting potential market sensitivity. Maritime and shipping implications are prominent, with multiple articles highlighting vessel risk or routing exposure.</span>
+          </div>
+          <div class="feed-meta">Source feed: https://news.google.com/rss/search?q=Suez+Canal&scoring=n</div>
+          <table class="signal-table">
+            <thead>
+              <tr>
+                <th>Published</th>
+                <th>Headline</th>
+                <th>Source</th>
+                <th>Chokepoint</th>
+                <th>Categories</th>
+                <th>Signal</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            <tr>
+              <td class="cell-time">2026-02-20T08:33:35+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNTEdRUnNjVWhsM2JISlBaOGVEYnFRaW1BeW1QbWJJOXJfRFpBa053cnN4REhVUnlVU3FzbVpHbC1OZHFmRmRWTENXZjEzQWVDRHc0d3hZbXRwUTdNa3hNd1ozZ29iamZZWUhPUkgyVlhoRHlEVFViMUUzc2pEUUttMzlkM3dnR2c2cXlUbk1WOWFVODdVaVUtQlh5QUVpdGhSdDRuUFdn?oc=5" target="_blank" rel="noopener noreferrer">
+                  Shipping companies begin reintroducing services through the Suez Canal - Oils & Fats International
+                </a>
+              </td>
+              <td class="cell-source">Oils & Fats International</td>
+              <td class="cell-chokepoint">Suez Canal</td>
+              <td class="cell-categories">Chokepoint, Energy Markets, Maritime / Shipping</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+
+            <tr>
+              <td class="cell-time">2026-02-20T22:02:00+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMi4gJBVV95cUxNWEg3ZWcyMWNsSTNxc05yVkRLSkd5VS0tckxtOVp4aWl6OVhBWTJ5eHhYdVBSOWZaR005Vmx6ekZDbEJQbml2UlYwM3hFTk9TbDlvTDNHdTBYMkVtQ0NZSVdYblZZN241c1p5MkZ1clB3a1o3NVdBT19nZFBCTDRUUzQ4eWhGQm9oR0NCZUFiT2xSQlNjLUc4OU56ZmtkNmU0dG5rMEx5Q3BFTWN5QzFNeUtkMFFqT0FOVlFNd1k1dnhZNlVBN2JGTVZFLU1DWkVpSkRMU3FmY0FFR19OTUNWc1ZwMFV5dkdzb1NEalhNUW94cm5kSF9rSDloamdFTndkU19VTlR3eG9qYlE5ekFLZkRuemQ3cERLS1pqckp6Tld3M3pvLUR1Vk5UY0pZT3NFa29qQ0RldmdlZThCeTI1SEQ2S2xEUGNjbzNZR3F5ckU4cGN0S0JVczZ0QmpWQ0F3V1E?oc=5" target="_blank" rel="noopener noreferrer">
+                  This colossal undertaking carved through the Egyptian desert to create a maritime route that shortens oceans, moves 14% of world trade, and has had its capacity doubled with billion-dollar expansions, in addition to having already brought the global economy - CPG Click Petróleo e Gás
+                </a>
+              </td>
+              <td class="cell-source">CPG Click Petróleo e Gás</td>
+              <td class="cell-chokepoint">—</td>
+              <td class="cell-categories">Maritime / Shipping, Infrastructure / Operations</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+            </tbody>
+          </table>
+        </section>
+        
+
+        <section class="chokepoint-section">
+          <header class="chokepoint-header">
+            <div class="chokepoint-title">Bab el-Mandeb</div>
+            <div class="chokepoint-subtitle">24h signal snapshot · deterministic RSS filter</div>
+          </header>
+          <div class="why-block">
+            <span class="why-label">Why this matters:</span>
+            <span class="why-text">No significant signals detected for Bab el-Mandeb in the last 24 hours.</span>
+          </div>
+          <div class="feed-meta">Source feed: https://news.google.com/rss/search?q=Bab+el+Mandeb&scoring=n</div>
+          <table class="signal-table">
+            <thead>
+              <tr>
+                <th>Published</th>
+                <th>Headline</th>
+                <th>Source</th>
+                <th>Chokepoint</th>
+                <th>Categories</th>
+                <th>Signal</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            <tr>
+              <td colspan="6" class="cell-empty">No qualifying articles in the last 24 hours.</td>
+            </tr>
+            
+            </tbody>
+          </table>
+        </section>
+        
+
+        <section class="chokepoint-section">
+          <header class="chokepoint-header">
+            <div class="chokepoint-title">Turkish Straits</div>
+            <div class="chokepoint-subtitle">24h signal snapshot · deterministic RSS filter</div>
+          </header>
+          <div class="why-block">
+            <span class="why-label">Why this matters:</span>
+            <span class="why-text">No significant signals detected for Turkish Straits in the last 24 hours.</span>
+          </div>
+          <div class="feed-meta">Source feed: https://news.google.com/rss/search?q=Bosporus+OR+Dardanelles+OR+Turkish+Straits&scoring=n</div>
+          <table class="signal-table">
+            <thead>
+              <tr>
+                <th>Published</th>
+                <th>Headline</th>
+                <th>Source</th>
+                <th>Chokepoint</th>
+                <th>Categories</th>
+                <th>Signal</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            <tr>
+              <td colspan="6" class="cell-empty">No qualifying articles in the last 24 hours.</td>
+            </tr>
+            
+            </tbody>
+          </table>
+        </section>
+        
+
+        <section class="chokepoint-section">
+          <header class="chokepoint-header">
+            <div class="chokepoint-title">Panama Canal</div>
+            <div class="chokepoint-subtitle">24h signal snapshot · deterministic RSS filter</div>
+          </header>
+          <div class="why-block">
+            <span class="why-label">Why this matters:</span>
+            <span class="why-text">Activity around Panama Canal is elevated enough to generate multiple relevant signals in the last 24 hours. Maritime and shipping implications are prominent, with multiple articles highlighting vessel risk or routing exposure.</span>
+          </div>
+          <div class="feed-meta">Source feed: https://news.google.com/rss/search?q=Panama+Canal&scoring=n</div>
+          <table class="signal-table">
+            <thead>
+              <tr>
+                <th>Published</th>
+                <th>Headline</th>
+                <th>Source</th>
+                <th>Chokepoint</th>
+                <th>Categories</th>
+                <th>Signal</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            <tr>
+              <td class="cell-time">2026-02-20T23:28:59+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNQXVYbGZTOGhNdU9XVDdyVnEzWWVwQzJuUWpfME1PYXlYVzBtWE1qR0xTb0dwdDNtNndsd1ZIX2F1XzdTdWVfaTZsbFJmdzFBYndVaDU4NW5Ra3pTRzdVXzJiZEl1V05aZDlPRl9xdnV0a3FNOWsxWEs0dUZ4TXpYM0RFQmZkaU1BbkZMQ09VLUM?oc=5" target="_blank" rel="noopener noreferrer">
+                  Jesse Watters Bizarrely Claims Trump Has ‘Gotten the Panama Canal Back’ Thanks to Tariffs - Yahoo
+                </a>
+              </td>
+              <td class="cell-source">Yahoo</td>
+              <td class="cell-chokepoint">Panama Canal</td>
+              <td class="cell-categories">Chokepoint</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+
+            <tr>
+              <td class="cell-time">2026-02-20T14:03:02+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNbklteS13azY2YU1QUkdUdExGdEEyX2c5d3MtWklfeExjT042VkZxRkpRd0RCQmNINXd5cWZ2TGFTY21NcmRtUV8yVGFRRzJYc0NkWndBYWRSUXVNZlUxNFhTRVMzVzBXVzZZWmdFblM1UVFSclFoVVR3Y195NUxJMjU1S3A1dndJX3BDcFBveUlSeXJ2NmJOTzBrOGN6UQ?oc=5" target="_blank" rel="noopener noreferrer">
+                  Climate change is spurring Trump’s desire for the Panama canal - Dialogue Earth
+                </a>
+              </td>
+              <td class="cell-source">Dialogue Earth</td>
+              <td class="cell-chokepoint">Panama Canal</td>
+              <td class="cell-categories">Chokepoint</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+
+            <tr>
+              <td class="cell-time">2026-02-20T21:54:13+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNQ2RwQk1FN3hUc2ZxdGJXakN4S2ZvSHNqdWZOZzRZb3JNR0szWHFSNm5sQW5IUER0UE1JOFNCMFM0ZThDLWZBYUVzUlJQejRWSEJhRWhtUUIyUUU4OXhhbTRSNE5VWl90NG90WjRDYnZ5Tk93eVQwOWRWcmNaMEVOLUw3VE1VNUN1NnJ1R3JncFVCcXVPcXViVmdaemlmcWJ6dkcwQ1hxT2lEb2xBTVE?oc=5" target="_blank" rel="noopener noreferrer">
+                  Hutchison Makes Overtures to Panama for Negotiations Over Terminal Ops - The Maritime Executive
+                </a>
+              </td>
+              <td class="cell-source">The Maritime Executive</td>
+              <td class="cell-chokepoint">—</td>
+              <td class="cell-categories">Maritime / Shipping, Infrastructure / Operations</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+
+            <tr>
+              <td class="cell-time">2026-02-20T04:14:57+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQYmZzVm9MUFJZX0tQWExxeU1vYi1rYzdZT2xlSFU2TW5LYS1FcWdIaDd4V1pYeVIxcGE2SVV5TkRLUWZrNXlvWWhDa3N6UVdreWtWMFRFdURqRXNMQkRvNEdtbWdOdmVCVnFrQjEyc3FjUFJmRk1Ra0E4aGk1dUU3OTlpOHpiUEMxRnV5eF9hd3UtYXhsbEhzaFFOSUNhdl93RWk0?oc=5" target="_blank" rel="noopener noreferrer">
+                  Hong Kong’s CK Hutchison seeks negotiations over Panama Canal ports - Hong Kong Free Press HKFP
+                </a>
+              </td>
+              <td class="cell-source">Hong Kong Free Press HKFP</td>
+              <td class="cell-chokepoint">Panama Canal</td>
+              <td class="cell-categories">Chokepoint, Maritime / Shipping</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+
+            <tr>
+              <td class="cell-time">2026-02-20T15:53:18+00:00</td>
+              <td class="cell-headline">
+                <a href="https://news.google.com/rss/articles/CBMisgJBVV95cUxQNVkxUWZmejhPc1Jla3AtZ3JOZFNScDYyVmhnOW40RVdyblhsSThJRUlPSl9NRmlOMlhjbFJ0TnBpOFdsNG93MmdlUmgwU2wzbm9pSUpKTGZGRG9vSzg0d1pMR0lmRG1tWm1VRDFEZmlwWExsV1VWOEVCRlRBdU5qXzlPZDg1X1FRVlFBZVZEcTdpRDFGZTVCQ0pRZkJldTFlcGRQb1Bob25TaFlKWFlSWndzNXUwbHV1Y0JZNk1oMk9oZGhHS3R0ekp4VUp0TUJiRGZXSmhDa0lQLW9YSWlrYTZHMkZLSndwNUJSOFlGbWNGX1d0WkJsY0ltWDdPdEp0RHJObmtYZEgtc1JqelBTMzlJclJGNUFZcDBaNk9GMFNaVnB6dVBnR3FLRjN5UVZHeEE?oc=5" target="_blank" rel="noopener noreferrer">
+                  Windstar Cruises Unveils Twenty One New Itineraries for Winter 2027-28, Highlighting its Growth in Small-Ship Cruising Across the South Pacific and Panama Canal - Travel And Tour World
+                </a>
+              </td>
+              <td class="cell-source">Travel And Tour World</td>
+              <td class="cell-chokepoint">Panama Canal</td>
+              <td class="cell-categories">Chokepoint, Weather / Natural Disruption</td>
+              <td class="cell-signal signal-1">1</td>
+            </tr>
+            
+            </tbody>
+          </table>
+        </section>
+        
+
+    <footer style="margin-top: 2rem; font-size: 0.85rem; color: #666;">
+      <p>© 2026 Randy Hinton. All rights reserved.<br>
+      This report is generated using deterministic, rule-based logic with no AI inference.<br>
+      For informational use only; not a forecast or market recommendation.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
