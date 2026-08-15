@@ -8,3 +8,4 @@
 
 # Allow README
 !README.md
+!*.mov
